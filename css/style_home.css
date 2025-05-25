@@ -1,0 +1,188 @@
+*{
+box-sizing: border-box; 
+/*sito responsive da mettere sempre */
+}
+
+/*navbar*/
+
+.navbar{
+    background-color: #023047;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+.nav-link{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffb706;
+}
+
+.nav-link:hover{
+    text-decoration: underline #ffb706;
+    color: white;
+}
+
+/*HOME FOR SECTION*/
+
+.first-section{
+    background-color: #023047;
+}
+
+.portfolio{
+    display: flex;
+    justify-content: center;
+}
+
+.img-portfolio{
+    width: 30%;
+    border-radius: 100%;
+    margin: 2cm;
+}
+
+
+.div-title-name{
+    display: flex;
+    justify-content: center;
+    color: #ffb706;
+}
+
+.name{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.div-description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.description-about{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+.div-hr{
+    display: flex;
+    justify-content: center;
+}
+
+.hr-home{
+    color: white;
+    width: 20%;
+}
+
+.section-about{
+    background-color: #023047;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 4em;
+}
+
+.bi-facebook{
+    margin: 0.5em;
+    color: white;
+}
+
+.bi.bi-facebook:hover{
+    color: antiquewhite;
+}
+
+.bi-linkedin{
+    margin: 0.5em;
+    color: white;
+}
+
+.bi.bi-linkedin:hover{
+    color: antiquewhite;
+}
+
+.bi-github{
+    margin: 0.5em;
+    color: white;
+}
+
+.bi.bi-github:hover{
+    color: antiquewhite;
+}
+
+.link-rif{
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+        
+}
+
+/*HOME SECOND SECTION*/
+
+.second-section{
+    background-color: white;
+}
+
+.title-second-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+    font-size: 4em;
+    color: #023047;
+}
+
+.h3-second-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+    font-size: 3em;
+    color: #023047;
+}
+
+.skills-icons{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.img-1{
+    width: 6%;
+    size: 100%;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.description-icon{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.skills-icons2{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.div-description-about{
+    text-align: center;
+}
+
+.description-about{
+    color: white;
+    font-size: 1em;
+}
+
+footer{
+    background-color: #023047;
+    color: #ffb706;
+	text-align: center;
+	padding: 10px;
+	margin-top: 7px;
+}

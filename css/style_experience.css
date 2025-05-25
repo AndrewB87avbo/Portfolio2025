@@ -1,0 +1,125 @@
+*{
+box-sizing: border-box;
+}
+
+/*navbar*/
+
+.navbar{
+    background-color: #023047;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+.nav-link{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffb706;
+}
+
+.nav-link:hover{
+    text-decoration: underline #ffb706;
+    color: white;
+}
+
+/*ESPERIENZE FIRST SECTION*/
+
+.first-section-esperienze{
+    background-color: #023047;
+    padding-left: 1.5EM;
+    padding-bottom: 2EM;
+}
+
+.div-title-education{
+    display: flex;
+}
+
+.h3-education{
+    color: #ffb706;
+    font-size: 3em;
+}
+
+.bi-book{
+    color: #ffb706;
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+.p-data{
+    color: white;
+    margin-bottom: 0
+}
+
+.p-descrizione{
+    color: white;
+}
+
+.div-title-professional{
+    display: flex;
+}
+
+.title-education{
+    color: #ffb706;
+    margin-top: 1em;
+}
+
+.description-education{
+    color: white;
+}
+
+.link-rif{
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+        
+}
+/* Esperienze second section */
+
+.second-section-esperienze{
+    color: #023047;
+    padding-left: 1.5em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.title-professional{
+    margin-top: auto;
+    margin-left: 1em;
+}
+
+.data-professional{
+    margin-bottom: 0;
+}
+
+.mecca{
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+.description0{
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.link-job{
+    font-style: italic;
+    text-decoration: none;
+    color: black;        
+}
+
+.link-att{
+    margin-left: 10em;
+    font-style: italic;
+    text-decoration: none;
+    color: #023047;
+        
+}
+
+footer{
+    background-color: #023047;
+    color: #ffb706;
+	text-align: center;
+	padding: 10px;
+	margin-top: 7px;
+}
