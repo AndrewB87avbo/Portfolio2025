@@ -40,13 +40,13 @@ box-sizing: border-box;
 .education-container{
     display: flex;
     flex-direction: row;
-    gap: 2em; /* spazio tra le colonne */
-    flex-wrap: wrap; /* opzionale: evita overflow su schermi piccoli */    
+    gap: 2em;
+    flex-wrap: wrap; 
 }
 
 .div-title-education{    
-    flex: 1 1 45%; /* ogni colonna occupa fino al 45% */
-    min-width: 300px; /* evita che diventi troppo stretta */
+    flex: 1 1 45%; 
+    min-width: 300px; 
 }
 
 .h3-education{
