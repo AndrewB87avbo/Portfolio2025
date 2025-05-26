@@ -33,6 +33,21 @@ box-sizing: border-box;
 
 .first-section{
     background-color: #023047;
+    padding: 2em; /* Add some padding to the section */
+}
+
+.content-wrapper {
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute space between items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    max-width: 100%; /* Optional: set a max width for better readability */
+    margin: 0 auto; /* Center the wrapper */
+}
+
+.text-content {
+    flex: 1; /* Allow text content to take available space */
+    min-width: 300px; /* Ensure text content doesn't get too small */
 }
 
 .portfolio{
@@ -41,29 +56,49 @@ box-sizing: border-box;
 }
 
 .img-portfolio{
-    width: 30%;
-    border-radius: 100%;
-    margin: 2cm;
+    width: 400px; /* Set a fixed width for the image */
+    height: 60%; /*Set a fixed height for the image */
+    border-radius: 50%;
+    margin-left: 2em; /* Add some margin to separate from text */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
+/* Responsive adjustments for the image */
+@media (max-width: 900px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center;
+    }
+    .img-portfolio {
+        margin: 2em auto; /* Center image on small screens */
+    }
+    .text-content {
+        order: 1; /* Put text below the image on small screens */
+    }
+    .Portfolio {
+        order: 2; /* Put image above the text on small screens */
+    }
+}
 
 .div-title-name{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align name to the left */
     color: #ffb706;
 }
 
 .name{
     font-size: 5em;
     font-weight: bold;
+    margin-bottom: 0; /* Remove default margin for better spacing */
 }
 
 .div-description{
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start; /* Align description to the left */
+    text-align: left; /* Align text within the div to the left */
     color: white;
 }
+
 
 .description-about{
     color: white;
@@ -155,7 +190,7 @@ box-sizing: border-box;
 }
 
 .img-1{
-    width: 6%;
+    width: 80px;
     size: 100%;
     margin: 1em;
     display: flex;

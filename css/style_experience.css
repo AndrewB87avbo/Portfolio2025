@@ -32,12 +32,21 @@ box-sizing: border-box;
 
 .first-section-esperienze{
     background-color: #023047;
+    justify-content: center;
     padding-left: 1.5EM;
     padding-bottom: 2EM;
 }
 
-.div-title-education{
+.education-container{
     display: flex;
+    flex-direction: row;
+    gap: 2em; /* spazio tra le colonne */
+    flex-wrap: wrap; /* opzionale: evita overflow su schermi piccoli */    
+}
+
+.div-title-education{    
+    flex: 1 1 45%; /* ogni colonna occupa fino al 45% */
+    min-width: 300px; /* evita che diventi troppo stretta */
 }
 
 .h3-education{
@@ -117,8 +126,12 @@ box-sizing: border-box;
     margin-left: 10em;
     font-style: italic;
     text-decoration: none;
-    color: #023047;
-        
+    color: #023047;        
+}
+
+.attachments{
+    text-decoration: none;
+    margin-left: 0.1cm;
 }
 
 footer{
