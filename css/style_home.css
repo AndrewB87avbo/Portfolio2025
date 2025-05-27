@@ -33,21 +33,21 @@ box-sizing: border-box;
 
 .first-section{
     background-color: #023047;
-    padding: 2em; /* Add some padding to the section */
+    padding: 2em;
 }
 
 .content-wrapper {
-    display: flex; /* Use flexbox for horizontal layout */
-    align-items: center; /* Align items vertically in the center */
-    justify-content: space-between; /* Distribute space between items */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    max-width: 100%; /* Optional: set a max width for better readability */
-    margin: 0 auto; /* Center the wrapper */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .text-content {
-    flex: 1; /* Allow text content to take available space */
-    min-width: 300px; /* Ensure text content doesn't get too small */
+    flex: 1;
+    min-width: 300px;
 }
 
 .portfolio{
@@ -56,49 +56,78 @@ box-sizing: border-box;
 }
 
 .img-portfolio{
-    width: 400px; /* Set a fixed width for the image */
-    height: 60%; /*Set a fixed height for the image */
+    width: 400px;
+    height: 60%;
     border-radius: 50%;
-    margin-left: 2em; /* Add some margin to separate from text */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-left: 2em;
+    object-fit: cover;
 }
 
-/* Responsive adjustments for the image */
 @media (max-width: 900px) {
     .content-wrapper {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column;
         text-align: center;
     }
     .img-portfolio {
-        margin: 2em auto; /* Center image on small screens */
+        margin: 2em auto;
     }
     .text-content {
-        order: 1; /* Put text below the image on small screens */
+        order: 1;
     }
     .Portfolio {
-        order: 2; /* Put image above the text on small screens */
+        order: 2;
     }
 }
 
 .div-title-name{
     display: flex;
-    justify-content: flex-start; /* Align name to the left */
+    justify-content: flex-start;
     color: #ffb706;
 }
 
 .name{
     font-size: 5em;
     font-weight: bold;
-    margin-bottom: 0; /* Remove default margin for better spacing */
+    margin-bottom: 0;
 }
 
 .div-description{
     display: flex;
-    justify-content: flex-start; /* Align description to the left */
-    text-align: left; /* Align text within the div to the left */
+    justify-content: flex-start;
+    text-align: left;
     color: white;
 }
 
+.desc-about{
+    font-style: italic;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 1cm;
+    overflow: auto;
+    padding: 0em;
+    background-color: #023047;    
+    width: 900px;
+    height: 5cm;
+    flex: content;    
+    color: white;
+}
+
+.desc-about::-webkit-scrollbar{
+    width: 10px;
+}
+
+.desc-about::-webkit-scrollbar-track {
+background-color: #ccc;
+box-shadow: #ffb706;
+border-radius: 10px;
+}
+
+.desc-about::-webkit-scrollbar-thumb {
+background-color: #ffb706;
+border-radius: 10px;
+}
 
 .description-about{
     color: white;

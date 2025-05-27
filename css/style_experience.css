@@ -1,5 +1,6 @@
 *{
-box-sizing: border-box;
+box-sizing: border-box; 
+/*sito responsive da mettere sempre */
 }
 
 /*navbar*/
@@ -39,14 +40,14 @@ box-sizing: border-box;
 
 .education-container{
     display: flex;
-    flex-direction: row;
-    gap: 2em; /* spazio tra le colonne */
-    flex-wrap: wrap; /* opzionale: evita overflow su schermi piccoli */    
+    flex-direction:initial;
+    gap: 2em;
+    flex-wrap: wrap;
 }
 
 .div-title-education{    
-    flex: 1 1 45%; /* ogni colonna occupa fino al 45% */
-    min-width: 300px; /* evita che diventi troppo stretta */
+    flex: 1 1 45%;
+    min-width: 300px;
 }
 
 .h3-education{
@@ -70,6 +71,7 @@ box-sizing: border-box;
 }
 
 .div-title-professional{
+    justify-content: center;
     display: flex;
 }
 
@@ -87,6 +89,12 @@ box-sizing: border-box;
     text-decoration: none;
     color: white;
         
+}
+
+.corsi-attestati{
+    display: flex;
+    background-color:#023047;
+    color: white;
 }
 /* Esperienze second section */
 
@@ -112,8 +120,13 @@ box-sizing: border-box;
 }
 
 .description0{
-    margin-top: 2em;
-    margin-bottom: 0.5em;
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+
+.description0-logo{
+    margin-top: 0.1cm;
+    margin-bottom: 0.5cm;
 }
 
 .link-job{
@@ -123,15 +136,23 @@ box-sizing: border-box;
 }
 
 .link-att{
-    margin-left: 10em;
+    display: flex;
+    justify-content: center;
+    margin-left: 2cm;
     font-style: italic;
     text-decoration: none;
     color: #023047;        
 }
 
-.attachments{
-    text-decoration: none;
-    margin-left: 0.1cm;
+.link-att-attachments{    
+    text-decoration: none;    
+}
+
+.pro-container{
+    display: flex;
+    flex-direction: initial;
+    gap: 2em; /* spazio tra le colonne */
+    flex-wrap: wrap; /* opzionale: evita overflow su schermi piccoli */    
 }
 
 footer{
