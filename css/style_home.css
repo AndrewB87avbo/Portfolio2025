@@ -104,12 +104,12 @@ box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 90%;
-    margin: 1cm;
+    max-width: 900px;
+    /*margin: 1cm;*/
     overflow: auto;
     padding: 0em;
     background-color: #023047;    
-    width: 900px;
+    width: auto;
     height: 5cm;
     flex: content;    
     color: white;
