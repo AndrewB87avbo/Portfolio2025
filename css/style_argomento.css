@@ -38,13 +38,14 @@ box-sizing: border-box;
     max-width: 750px; /* Larghezza leggermente ridotta per un blog personale */
     margin: 25px auto;
     padding: 0 20px;
-    background-color: #fcfcfc;
-
-    /*background-image: url('Big-Data-e-Intelligenza-Artificiale-1200x539.jpg'); /* Sostituisci con il percorso della tua immagine */
-    /*background-size: cover; /* Copre l'intera area disponibile */
-    /*background-attachment: fixed; /* Mantiene l'immagine fissa durante lo scroll */
-    /*background-position: center center; /* Centra l'immagine sia orizzontalmente che verticalmente */
-    /*background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+    background-color: #fcfcfc, 40%;
+}
+.body-background{
+    background-image: url('Big-Data-e-Intelligenza-Artificiale-1200x539.jpg'); /* Sostituisci con il percorso della tua immagine */
+    background-size: cover; /* Copre l'intera area disponibile */
+    background-attachment: fixed; /* Mantiene l'immagine fissa durante lo scroll */
+    background-position: center center; /* Centra l'immagine sia orizzontalmente che verticalmente */
+    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
 }
 .h1 {
     color: #2c3e50;
@@ -95,4 +96,12 @@ box-sizing: border-box;
     font-size: 1.15em;
     text-align: center;
     border-radius: 5px;
+}
+
+/* Nuovo stile per il contenuto principale, per far sì che il testo sia leggibile sopra l'immagine */
+.main {
+    background-color: rgba(255, 255, 255, 0.9); /* Sfondo semi-trasparente per il contenuto */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
