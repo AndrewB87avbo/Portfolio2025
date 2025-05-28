@@ -1,0 +1,98 @@
+*{
+box-sizing: border-box; 
+/*sito responsive da mettere sempre */
+}
+
+/*navbar*/
+
+.navbar{
+    background-color: #023047;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+.navbar-toggler{
+    background-color: #ffb706;
+    background: white;
+}
+
+.nav-link{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffb706;
+}
+
+.nav-link:hover{
+    text-decoration: underline #ffb706;
+    color: white;
+}
+
+/*corpo del testo*/
+
+.body {
+    font-family: 'Georgia', serif; /* Un font più adatto a un blog personale */
+    line-height: 1.7;
+    color: #333;
+    max-width: 750px; /* Larghezza leggermente ridotta per un blog personale */
+    margin: 25px auto;
+    padding: 0 20px;
+    background-color: #fcfcfc;
+
+    /*background-image: url('Big-Data-e-Intelligenza-Artificiale-1200x539.jpg'); /* Sostituisci con il percorso della tua immagine */
+    /*background-size: cover; /* Copre l'intera area disponibile */
+    /*background-attachment: fixed; /* Mantiene l'immagine fissa durante lo scroll */
+    /*background-position: center center; /* Centra l'immagine sia orizzontalmente che verticalmente */
+    /*background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+}
+.h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.h2 {
+    color: #34495e;
+    font-size: 1.9em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.h3 {
+    color: #34495e;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.p {
+    margin-bottom: 18px;
+}
+.strong {
+    color: #007bff; /* Un colore per evidenziare il testo in grassetto */
+}
+.ul {
+    list-style-type: square; /* Un list-style un po' diverso */
+    margin-left: 25px;
+    margin-bottom: 18px;
+}
+.ul-li {
+    margin-bottom: 8px;
+}
+.intro-text {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.call-to-action {
+    background-color: #e9f7ff;
+    border-left: 6px solid #007bff;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1.15em;
+    text-align: center;
+    border-radius: 5px;
+}
