@@ -106,8 +106,18 @@ box-sizing: border-box;
 }
 
 .title-professional{
+    display: flex;
     margin-top: auto;
-    margin-left: 1em;
+    margin-right: 10%;
+}
+
+.link-att{
+    display: flex;
+    justify-content: center;
+    margin-right: 7%;
+    font-style: italic;
+    text-decoration: none;
+    color: #023047;        
 }
 
 .data-professional{
@@ -133,15 +143,6 @@ box-sizing: border-box;
     font-style: italic;
     text-decoration: none;
     color: black;        
-}
-
-.link-att{
-    display: flex;
-    justify-content: center;
-    margin-left: 2cm;
-    font-style: italic;
-    text-decoration: none;
-    color: #023047;        
 }
 
 .link-att-attachments{    
