@@ -41,7 +41,7 @@ box-sizing: border-box;
     background-color: #fcfcfc, 40%;
 }
 .body-background{
-    background-image: url('Big-Data-e-Intelligenza-Artificiale-1200x539.jpg'); /* Sostituisci con il percorso della tua immagine */
+    background-image: url('../img/Big-Data-e-Intelligenza-Artificiale-1200x539.jpg'); /* Sostituisci con il percorso della tua immagine */
     background-size: cover; /* Copre l'intera area disponibile */
     background-attachment: fixed; /* Mantiene l'immagine fissa durante lo scroll */
     background-position: center center; /* Centra l'immagine sia orizzontalmente che verticalmente */

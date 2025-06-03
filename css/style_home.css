@@ -4,7 +4,6 @@ box-sizing: border-box;
 }
 
 /*navbar*/
-
 .navbar{
     background-color: #023047;
     display: flex;    
@@ -12,30 +11,25 @@ box-sizing: border-box;
     justify-content: center;
     padding: 1.5em;
 }
-
 .navbar-toggler{
     background-color: #ffb706;
     background: white;
 }
-
 .nav-link{
     font-weight: bold;
     font-size: 1.5em;
     color: #ffb706;
 }
-
 .nav-link:hover{
     text-decoration: underline #ffb706;
     color: white;
 }
 
 /*HOME FOR SECTION*/
-
 .first-section{
     background-color: #023047;
     padding: 2em;
 }
-
 .content-wrapper {
     display: flex;
     align-items: center;
@@ -44,17 +38,14 @@ box-sizing: border-box;
     max-width: 100%;
     margin: 0 auto;
 }
-
 .text-content {
     flex: 1;
     min-width: 300px;
 }
-
 .portfolio{
     display: flex;
     justify-content: center;
 }
-
 .img-portfolio{
     width: 400px;
     height: 60%;
@@ -62,7 +53,6 @@ box-sizing: border-box;
     margin-left: 2em;
     object-fit: cover;
 }
-
 @media (max-width: 900px) {
     .content-wrapper {
         background-color: #023047;
@@ -79,26 +69,22 @@ box-sizing: border-box;
         order: 2;
     }
 }
-
 .div-title-name{
     display: flex;
     justify-content: flex-start;
     color: #ffb706;
 }
-
 .name{
     font-size: 5em;
     font-weight: bold;
     margin-bottom: 0;
 }
-
 .div-description{
     display: flex;
     justify-content: flex-start;
     text-align: left;
     color: white;
 }
-
 .desc-about{
     font-style: italic;
     align-items: center;
@@ -114,76 +100,61 @@ box-sizing: border-box;
     flex: content;    
     color: white;
 }
-
 .desc-about::-webkit-scrollbar{
     width: 10px;
 }
-
 .desc-about::-webkit-scrollbar-track {
 background-color: #ccc;
 box-shadow: #ffb706;
 border-radius: 10px;
 }
-
 .desc-about::-webkit-scrollbar-thumb {
 background-color: #ffb706;
 border-radius: 10px;
 }
-
 .description-about{
     color: white;
     text-align: center;
     font-size: 1em;
 }
-
 .div-hr{
     display: flex;
     justify-content: center;
 }
-
 .hr-home{
     color: white;
     width: 20%;
 }
-
 .section-about{
     background-color: #023047;
 }
-
 .contact-icons{
     display: flex;
     justify-content: center;
     color: white;
     padding-bottom: 4em;
 }
-
 .bi-facebook{
     margin: 0.5em;
     color: white;
 }
-
 .bi.bi-facebook:hover{
     color: antiquewhite;
 }
-
 .bi-linkedin{
     margin: 0.5em;
     color: white;
 }
-
 .bi.bi-linkedin:hover{
     color: antiquewhite;
 }
-
 .bi-github{
     margin: 0.5em;
     color: white;
 }
-
 .bi.bi-github:hover{
     color: antiquewhite;
 }
-
 .link-rif{
     font-style: italic;
     text-decoration: none;
@@ -191,11 +162,9 @@ border-radius: 10px;
 }
 
 /*HOME SECOND SECTION*/
-
 .second-section{
     background-color: white;
 }
-
 .title-second-section{
     display: flex;
     justify-content: center;
@@ -203,7 +172,6 @@ border-radius: 10px;
     font-size: 4em;
     color: #023047;
 }
-
 .h3-second-section{
     display: flex;
     justify-content: center;
@@ -211,13 +179,11 @@ border-radius: 10px;
     font-size: 3em;
     color: #023047;
 }
-
 .skills-icons{
     display: flex;
     justify-content: center;
     margin: 0;
 }
-
 .img-1{
     width: 80px;
     size: 100%;
@@ -226,28 +192,23 @@ border-radius: 10px;
     justify-content: center;
     flex-direction: column;
 }
-
 .description-icon{
     text-align: center;
     font-weight: bold;
     margin: 0;
 }
-
 .skills-icons2{
     display: flex;
     justify-content: center;
     margin: 0;
 }
-
 .div-description-about{
     text-align: center;
 }
-
 .description-about{
     color: white;
     font-size: 1em;
 }
-
 footer{
     background-color: #023047;
     color: #ffb706;
