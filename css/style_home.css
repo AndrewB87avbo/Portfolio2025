@@ -105,7 +105,7 @@ box-sizing: border-box;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 900px;
-    /*margin: 1cm;*/
+    margin-top: 20px;
     overflow: auto;
     padding: 0em;
     background-color: #023047;    

@@ -29,6 +29,62 @@ box-sizing: border-box;
     color: white;
 }
 
+/* Stile per il contenitore della lightbox */
+.lightbox {
+    display: none; /* Inizialmente nascosto */
+    position: fixed; /* Si posiziona sopra tutto */
+    z-index: 1000; /* Assicura che sia sopra gli altri elementi */
+    left: 0;
+    top: 0;
+    width: 100%; /* Copre l'intera larghezza */
+    height: 100%; /* Copre l'intera altezza */
+    overflow: auto; /* Abilita lo scroll se l'immagine è troppo grande */
+    background-color: rgba(0,0,0,0.9); /* Sfondo nero semi-trasparente */
+    display: flex; /* Centra il contenuto */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+}
+
+/* Stile per l'immagine all'interno della lightbox */
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Limita la larghezza massima dell'immagine */
+    max-height: 80%; /* Limita l'altezza massima dell'immagine */
+    border: 3px solid #ddd; /* Bordo opzionale */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Bottone di chiusura */
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animazione per la visualizzazione dell'immagine */
+.lightbox-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
 /*ESPERIENZE FIRST SECTION*/
 
 .first-section-esperienze{
@@ -45,7 +101,7 @@ box-sizing: border-box;
     flex-wrap: wrap;
 }
 
-.div-title-education{    
+.div-title-education{
     flex: 1 1 45%;
     min-width: 300px;
 }
@@ -75,11 +131,21 @@ box-sizing: border-box;
     display: flex;
 }
 
+.div-title-professional h3{
+    margin-left: 10px;
+    justify-content: center;
+    display: flex;
+}
+
 .title-education{
     color: #ffb706;
     margin-top: 1em;
 }
 
+.title-education-paper{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
 .description-education{
     color: white;
 }
@@ -87,15 +153,41 @@ box-sizing: border-box;
 .link-rif{
     font-style: italic;
     text-decoration: none;
-    color: white;
-        
+    color: white;        
 }
 
 .corsi-attestati{
+    margin-top: 10px;
+    margin-right: 5%;
+    justify-content: center;
     display: flex;
     background-color:#023047;
     color: white;
 }
+
+.corsi-attestati ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.corsi-attestati ul li a{
+  color: #ffb706;;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.corsi-attestati ul li a:hover{
+  text-decoration: underline #ffb706;
+    color: white;
+}
+
 /* Esperienze second section */
 
 .second-section-esperienze{
