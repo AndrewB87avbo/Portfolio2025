@@ -1,49 +1,50 @@
-*{
-box-sizing: border-box;
-/* sito responsive da mettere sempre */
+* {
+    box-sizing: border-box;
+    /* sito responsive da mettere sempre */
 }
-html, body {
+body,
+html {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
-    min-height: 100vh; /* Altezza minima uguale all'altezza della viewport */
+    min-height: 100vh;
+    /* Altezza minima uguale all'altezza della viewport */
     display: flex;
     flex-direction: column;
 }
 
 /*navbar*/
-.navbar{
+.navbar {
     background-color: #023047;
-    display: flex;    
+    display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 1.5em;
 }
-.navbar-toggler{
+.navbar-toggler {
     background-color: #ffb706;
     background: white;
 }
-.nav-link{
+.nav-link {
     font-weight: bold;
     font-size: 1.5em;
     color: #ffb706;
 }
-.nav-link:hover{
+.nav-link:hover {
     text-decoration: underline #ffb706;
     color: white;
 }
 
 main {
-    flex: 1; /* Il contenuto principale si espande */
+    flex: 1;
+    /* Il contenuto principale si espande */
 }
 
-
-
 /*HOME FOR SECTION*/
-.first-section{
+.first-section {
     background-color: #023047;
     padding: 2em;
 }
@@ -59,11 +60,11 @@ main {
     flex: 1;
     min-width: 300px;
 }
-.portfolio{
+.portfolio {
     display: flex;
     justify-content: center;
 }
-.img-portfolio{
+.img-portfolio {
     width: 400px;
     height: 60%;
     border-radius: 50%;
@@ -86,23 +87,23 @@ main {
         order: 2;
     }
 }
-.div-title-name{
+.div-title-name {
     display: flex;
     justify-content: flex-start;
     color: #ffb706;
 }
-.name{
+.name {
     font-size: 5em;
     font-weight: bold;
     margin-bottom: 0;
 }
-.div-description{
+.div-description {
     display: flex;
     justify-content: flex-start;
     text-align: left;
     color: white;
 }
-.desc-about{
+.desc-about {
     font-style: italic;
     align-items: center;
     justify-content: space-between;
@@ -110,98 +111,98 @@ main {
     max-width: 900px;
     margin-top: 20px;
     overflow: auto;
-    padding: 0em;
-    background-color: #023047;    
+    padding: 0;
+    background-color: #023047;
     width: auto;
     height: 5cm;
-    flex: content;    
+    flex: content;
     color: white;
 }
-.desc-about::-webkit-scrollbar{
+.desc-about::-webkit-scrollbar {
     width: 10px;
 }
 .desc-about::-webkit-scrollbar-track {
-background-color: #ccc;
-box-shadow: #ffb706;
-border-radius: 10px;
+    background-color: #ccc;
+    box-shadow: #ffb706;
+    border-radius: 10px;
 }
 .desc-about::-webkit-scrollbar-thumb {
-background-color: #ffb706;
-border-radius: 10px;
+    background-color: #ffb706;
+    border-radius: 10px;
 }
-.description-about{
+.description-about {
     color: white;
     text-align: center;
     font-size: 1em;
 }
-.div-hr{
+.div-hr {
     display: flex;
     justify-content: center;
 }
-.hr-home{
+.hr-home {
     color: white;
     width: 20%;
 }
-.section-about{
+.section-about {
     background-color: #023047;
 }
-.contact-icons{
+.contact-icons {
     display: flex;
     justify-content: center;
     color: white;
     padding-bottom: 4em;
 }
-.bi-facebook{
+.bi-facebook {
     margin: 0.5em;
     color: white;
 }
-.bi.bi-facebook:hover{
+.bi.bi-facebook:hover {
     color: antiquewhite;
 }
-.bi-linkedin{
+.bi-linkedin {
     margin: 0.5em;
     color: white;
 }
-.bi.bi-linkedin:hover{
+.bi.bi-linkedin:hover {
     color: antiquewhite;
 }
-.bi-github{
+.bi-github {
     margin: 0.5em;
     color: white;
 }
-.bi.bi-github:hover{
+.bi.bi-github:hover {
     color: antiquewhite;
 }
-.link-rif{
+.link-rif {
     font-style: italic;
     text-decoration: none;
-    color: white;        
+    color: white;
 }
 
 /*HOME SECOND SECTION*/
-.second-section{
+.second-section {
     background-color: white;
 }
-.title-second-section{
+.title-second-section {
     display: flex;
     justify-content: center;
     margin-top: 0.5em;
     font-size: 4em;
     color: #023047;
 }
-.h3-second-section{
+.h3-second-section {
     display: flex;
     justify-content: center;
     margin-top: 0.5em;
     font-size: 3em;
     color: #023047;
 }
-.skills-icons{
+.skills-icons {
     display: flex;
     justify-content: center;
     margin: 0;
 }
-.img-1{
+.img-1 {
     width: 80px;
     size: 100%;
     margin: 1em;
@@ -209,27 +210,27 @@ border-radius: 10px;
     justify-content: center;
     flex-direction: column;
 }
-.description-icon{
+.description-icon {
     text-align: center;
     font-weight: bold;
     margin: 0;
 }
-.skills-icons2{
+.skills-icons2 {
     display: flex;
     justify-content: center;
     margin: 0;
 }
-.div-description-about{
+.div-description-about {
     text-align: center;
 }
-.description-about{
+.description-about {
     color: white;
     font-size: 1em;
 }
 
-footer{
+footer {
     background-color: #023047;
     color: #ffb706;
     text-align: center;
-    padding: 10px;    
+    padding: 10px;
 }

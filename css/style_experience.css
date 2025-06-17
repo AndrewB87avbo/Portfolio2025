@@ -1,69 +1,83 @@
-*{
-box-sizing: border-box;
-/* sito responsive da mettere sempre */
+* {
+    box-sizing: border-box;
+    /* sito responsive da mettere sempre */
 }
-html, body {
+body,
+html {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
-    min-height: 100vh; /* Altezza minima uguale all'altezza della viewport */
+    min-height: 100vh;
+    /* Altezza minima uguale all'altezza della viewport */
     display: flex;
     flex-direction: column;
 }
 
 /*navbar*/
-.navbar{
+.navbar {
     background-color: #023047;
-    display: flex;    
+    display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 1.5em;
 }
-.navbar-toggler{
+.navbar-toggler {
     background-color: #ffb706;
     background: white;
 }
-.nav-link{
+.nav-link {
     font-weight: bold;
     font-size: 1.5em;
     color: #ffb706;
 }
-.nav-link:hover{
+.nav-link:hover {
     text-decoration: underline #ffb706;
     color: white;
 }
 
 main {
-    flex: 1; /* Il contenuto principale si espande */
+    flex: 1;
+    /* Il contenuto principale si espande */
 }
-
-
 
 /* Stile per il contenitore della lightbox */
 .lightbox {
-    display: none; /* Inizialmente nascosto */
-    position: fixed; /* Si posiziona sopra tutto */
-    z-index: 1000; /* Assicura che sia sopra gli altri elementi */
+    display: none;
+    /* Inizialmente nascosto */
+    position: fixed;
+    /* Si posiziona sopra tutto */
+    z-index: 1000;
+    /* Assicura che sia sopra gli altri elementi */
     left: 0;
     top: 0;
-    width: 100%; /* Copre l'intera larghezza */
-    height: 100%; /* Copre l'intera altezza */
-    overflow: auto; /* Abilita lo scroll se l'immagine è troppo grande */
-    background-color: rgba(0,0,0,0.9); /* Sfondo nero semi-trasparente */
-    display: flex; /* Centra il contenuto */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra orizzontalmente */
+    width: 100%;
+    /* Copre l'intera larghezza */
+    height: 100%;
+    /* Copre l'intera altezza */
+    overflow: auto;
+    /* Abilita lo scroll se l'immagine è troppo grande */
+    background-color: rgba(0,0,0,0.9);
+    /* Sfondo nero semi-trasparente */
+    display: flex;
+    /* Centra il contenuto */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra orizzontalmente */
 }
 /* Stile per l'immagine all'interno della lightbox */
 .lightbox-content {
     margin: auto;
     display: block;
-    max-width: 90%; /* Limita la larghezza massima dell'immagine */
-    max-height: 90%; /* Limita l'altezza massima dell'immagine */
-    border: 3px solid #ddd; /* Bordo opzionale */
+    max-width: 90%;
+    /* Limita la larghezza massima dell'immagine */
+    max-height: 90%;
+    /* Limita l'altezza massima dell'immagine */
+    border: 3px solid #ddd;
+    /* Bordo opzionale */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* Bottone di chiusura */
@@ -77,98 +91,103 @@ main {
     transition: 0.3s;
     cursor: pointer;
 }
-.close-button:hover,
-.close-button:focus {
+.close-button:focus,
+.close-button:hover {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
 /* Animazione per la visualizzazione dell'immagine */
-.lightbox-content, #caption {
+#caption,
+.lightbox-content {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 /*ESPERIENZE FIRST SECTION*/
-.first-section-esperienze{
+.first-section-esperienze {
     background-color: #023047;
     justify-content: center;
     padding-left: 1.5EM;
     padding-bottom: 2EM;
 }
-.education-container{
+.education-container {
     display: flex;
     flex-direction: initial;
     gap: 2em;
     flex-wrap: wrap;
 }
-.div-title-education{
+.div-title-education {
     flex: 1 1 45%;
     min-width: 300px;
 }
-.h3-education{
+.h3-education {
     color: #ffb706;
     font-size: 3em;
 }
-.bi-book{
+.bi-book {
     color: #ffb706;
     margin-top: 0.5em;
     margin-left: 1em;
 }
-.p-data{
+.p-data {
     color: white;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
-.p-descrizione{
+.p-descrizione {
     color: white;
 }
-.div-title-professional{
+.div-title-professional {
     justify-content: center;
     display: flex;
 }
-.div-title-professional h3{
+.div-title-professional h3 {
     margin-left: 10px;
     justify-content: center;
     display: flex;
 }
-.title-education{
+.title-education {
     color: #ffb706;
     margin-top: 1em;
 }
-.title-education-paper{
+.title-education-paper {
     margin-left: 30px;
     margin-bottom: 10px;
 }
-.description-education{
+.description-education {
     color: white;
 }
-.link-rif{
+.link-rif {
     font-style: italic;
     text-decoration: none;
-    color: white;        
+    color: white;
 }
 
-.corsi-attestati{
+.corsi-attestati {
     margin-top: 5px;
     margin-right: 5%;
     justify-content: center;
     display: flex;
-    background-color:#023047;
+    background-color: #023047;
     color: white;
 }
 
 /*Corsi e attestati*/
-.skills-icons{
+.skills-icons {
     gap: 1em;
     margin-right: 5%;
     display: flex;
     justify-content: center;
 }
-.img-1{
+.img-1 {
     width: 64px;
     size: 100%;
     margin: 10px;
@@ -176,74 +195,76 @@ main {
     justify-content: center;
     flex-direction: column;
 }
-.description-icon{
+.description-icon {
     margin-top: 10px;
     display: flex;
     color: white;
     justify-content: center;
     text-align: center;
     font-weight: bold;
-    
+
 }
 
 /* Esperienze second section */
-.second-section-esperienze{
+.second-section-esperienze {
     color: #023047;
     padding-left: 1.5em;
     padding-bottom: 2em;
     padding-top: 10px;
 }
-.title-professional{
+.title-professional {
     display: flex;
     margin-top: auto;
     margin-right: 10%;
 }
-.link-att{
+.link-att {
     display: flex;
     justify-content: center;
     margin-right: 7%;
     font-style: italic;
     text-decoration: none;
-    color: #023047;        
+    color: #023047;
 }
-.data-professional{
+.data-professional {
     margin-bottom: 0;
 }
-.mecca{
+.mecca {
     margin-top: 0.5em;
     margin-left: 1em;
 }
-.description0{
+.description0 {
     flex: 1 1 45%;
     min-width: 300px;
 }
-.description0-logo{
+.description0-logo {
     margin-top: 0.1cm;
     margin-bottom: 0.5cm;
 }
-.link-job{
+.link-job {
     font-style: italic;
     text-decoration: none;
-    color: black;        
+    color: black;
 }
-.link-att-attachments{    
+.link-att-attachments {
     text-decoration: none;
 }
-.pro-container{
+.pro-container {
     margin-top: 20px;
     display: flex;
     flex-direction: initial;
-    gap: 2em; /* spazio tra le colonne */
-    flex-wrap: wrap; /* opzionale: evita overflow su schermi piccoli */    
+    gap: 2em;
+    /* spazio tra le colonne */
+    flex-wrap: wrap;
+    /* opzionale: evita overflow su schermi piccoli */
 }
 
-.space5px{
+.space5px {
     margin-left: 5px;
 }
 
-footer{
+footer {
     background-color: #023047;
     color: #ffb706;
     text-align: center;
-    padding: 10px;    
+    padding: 10px;
 }

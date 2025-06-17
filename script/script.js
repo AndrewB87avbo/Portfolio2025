@@ -10,7 +10,7 @@ var triggers = document.getElementsByClassName('my-lightbox-trigger');
 // Itera su ogni miniatura e aggiungi l'evento click
 for (var i = 0; i < triggers.length; i++) {
     var trigger = triggers[i];
-    trigger.onclick = function() {
+    trigger.onclick = function () {
         lightbox.style.display = "flex"; // Rende visibile il lightbox (uso flex per centrare)
 
         // Prende il percorso dell'immagine grande dall'attributo data-src della miniatura cliccata
@@ -22,12 +22,12 @@ for (var i = 0; i < triggers.length; i++) {
 }
 
 // Quando l'utente clicca sul pulsante di chiusura (x), chiudi la lightbox
-closeButton.onclick = function() {
+closeButton.onclick = function () {
     lightbox.style.display = "none";
 }
 
 // Quando l'utente clicca fuori dalla lightbox, chiudi la lightbox
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == lightbox) {
         lightbox.style.display = "none";
     }
